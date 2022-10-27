@@ -16,4 +16,10 @@ class ParseDataTest {
         ParseData.parseData();
         assertNotNull(ParseData.file);
     }
+
+    @Test
+    void checkFileEmpty() {
+        ParseData.parseData();
+        assertEquals(true, ParseData.checkFileEmpty());
+    }
 }
