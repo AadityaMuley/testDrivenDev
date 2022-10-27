@@ -5,28 +5,37 @@
  */
 public class UrinalCheck {
 
-    String data;
-    int l;
-    int count = 0;
+    static StringBuilder data;
+    static int l;
+    static int count;
 
-    public void checkValidity() {
-        for(int i=0; i<l; i++) {
-            if(data.charAt(i) != '0' || data.charAt(i) != '1'){
-                count = -1;
-                break;
-            }
-        }
-    }
+    public static int checkUrinals(String d) {
 
-    public int checkUrinals(String data) {
-
-        this.data = data;
+        data = new StringBuilder(d);
         l = data.length();
-        checkValidity();
+        count = 0;
 
-        if(((data.charAt(0) == '0') && (data.charAt(1) == '0')) || ((data.charAt(l-1) == '0') && (data.charAt(l-2) == '0'))){
-        }
-         for(int i=0; i<l-1; i++){
+         for(int i=0; i<l; i++) {
+
+             if(i == 0) {
+                 if(data.charAt(i) == '0' && data.charAt(i+1) == '0') {
+                     count++;
+                     data.setCharAt(i, '1');
+                 }
+             }
+             else if(i == l-1) {
+                 if(data.charAt(i) == '0' && data.charAt(i-1) == '0') {
+                     count++;
+                     data.setCharAt(i, '1');
+                 }
+             }
+             else {
+                 if(data.charAt(i) == '0' && data.charAt(i-1) == '0' && data.charAt(i+1) == '0') {
+                     count++;
+                     data.setCharAt(i, '1');
+                 }
+             }
+
          }
 
          return count;

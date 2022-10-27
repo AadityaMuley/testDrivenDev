@@ -14,8 +14,11 @@ public class UrinalMain {
         ParseData parseData = new ParseData();
         parseData.parseData();
 
-//        for(String i : urinal){
-//            System.out.println(i);
-//        }
+        UrinalCheck urinalCheck = new UrinalCheck();
+        int count;
+        for(String i : urinal){
+            count = urinalCheck.checkUrinals(i);
+            System.out.println(count);
+        }
     }
 }
