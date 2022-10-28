@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/urinal.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/urinal.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UrinalCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UrinalCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UrinalCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UrinalCheckTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UrinalCheckTest.checkUrinals">
+  <component name="RunManager" selected="Application.urinals">
     <configuration name="urinals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="urinals" />
       <module name="testDrivenDev.main" />

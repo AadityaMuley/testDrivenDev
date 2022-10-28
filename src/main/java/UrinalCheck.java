@@ -35,6 +35,10 @@ public class UrinalCheck {
 
         validateString();
 
+        if(d.equals(null)) {
+            return -1;
+        }
+
         if(count == -1) {
             return count;
         }
