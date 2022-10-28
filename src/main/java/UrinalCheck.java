@@ -10,8 +10,17 @@ public class UrinalCheck {
     static int count;
 
     public static void validateString() {
-        for(int i=0; i<l-1; i++) {
+        int i;
+
+        for(i=0; i<l-1; i++) {
             if(data.charAt(i) == '1' && data.charAt(i+1) == '1') {
+                count = -1;
+                break;
+            }
+        }
+
+        for(i=0; i<l; i++) {
+            if(data.charAt(i) != '0' && data.charAt(i) != '1') {
                 count = -1;
                 break;
             }
