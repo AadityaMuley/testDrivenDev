@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce5c858d-6d48-474c-808d-3ed18fb87e9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/urinal.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/urinal.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UrinalCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UrinalCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UrinalMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UrinalMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>

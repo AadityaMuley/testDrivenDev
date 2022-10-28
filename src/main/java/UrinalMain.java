@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class UrinalMain {
 
     public static ArrayList<String> urinal = new ArrayList<String>();
+    public static ArrayList<Integer> freeUrinals = new ArrayList<Integer>();
 
     public void urinalMain() {
 
@@ -18,7 +19,10 @@ public class UrinalMain {
         int count;
         for(String i : urinal){
             count = urinalCheck.checkUrinals(i);
-            System.out.println(count);
+            freeUrinals.add(count);
         }
+
+        WriteData writeData = new WriteData();
+        writeData.writeFile();
     }
 }
