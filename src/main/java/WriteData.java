@@ -10,7 +10,6 @@ import java.io.PrintWriter;
  */
 public class WriteData extends UrinalMain{
 
-    static boolean firstFile;
     static int fileNum;
     static String path;
     static File file;
@@ -18,28 +17,44 @@ public class WriteData extends UrinalMain{
     static String temp;
 
     public WriteData() {
-        firstFile = true;
-        path = "src/data/rule";
+        path = "src/output/rule";
         fileNum = 1;
     }
 
     public static void writeFile() {
 
-        String tempPath = "";
         try {
-            file = new File("src/data/rule.txt");
+            String tempPath = "";
+
+            tempPath = path + ".txt";
+            file = new File(tempPath);
+
             if(!file.exists()) {
-                tempPath = path.concat(".txt");
                 fw = new PrintWriter(tempPath, "UTF-8");
+
                 for(int i=0; i<freeUrinals.size(); i++) {
                     temp = Integer.toString(freeUrinals.get(i));
                     fw.println(temp);
                 }
                 fw.close();
-                //firstFile = false;
             }
             else {
-                System.out.println("Bo");
+                while(true) {
+                    tempPath = path + fileNum + ".txt";
+                    fileNum++;
+                    file = new File(tempPath);
+
+                    if(!file.exists()) {
+                        fw = new PrintWriter(tempPath, "UTF-8");
+
+                        for(int i=0; i<freeUrinals.size(); i++) {
+                            temp = Integer.toString(freeUrinals.get(i));
+                            fw.println(temp);
+                        }
+                        fw.close();
+                        break;
+                    }
+                }
             }
         }
         catch (IOException e) {
