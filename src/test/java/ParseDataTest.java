@@ -13,12 +13,14 @@ class ParseDataTest {
 
     @Test
     void parseData() {
+        //check if the input file exists
         ParseData.parseData();
         assertNotNull(ParseData.file);
     }
 
     @Test
     void checkFileEmpty() {
+        //check if the input file is not empty
         ParseData.parseData();
         assertEquals(true, ParseData.checkFileEmpty());
     }

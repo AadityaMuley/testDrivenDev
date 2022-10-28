@@ -14,6 +14,7 @@ class UrinalCheckTest {
         //check if there are consecutive 1's in the string
         assertEquals(-1, UrinalCheck.checkUrinals("011"));
 
+
         //check if the string has any other char except 1 or 0
         boolean validate = false;
         for(int i=0; i<UrinalCheck.data.length(); i++) {
@@ -23,6 +24,7 @@ class UrinalCheckTest {
             }
         }
         assertEquals(true, validate);
+
 
         //check if string is not null
         assertNotEquals(null, UrinalCheck.data);

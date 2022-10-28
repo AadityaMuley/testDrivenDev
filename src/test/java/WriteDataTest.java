@@ -30,6 +30,7 @@ class WriteDataTest {
         WriteData.file = new File(tempPath);
         assertEquals(false, WriteData.file.exists());
 
+
         //check if file name is proper format
         assertEquals(true, pathValidity(tempPath));
     }
